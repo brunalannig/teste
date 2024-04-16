@@ -6,4 +6,4 @@ let idade = ano_atual - ano_nascimento
 let maior_idade = idade >= 18
 let idadeEm2050 = 2050 - ano_nascimento
 
-alert(`Seu nome e ${nome} voce tem ${idade} e o ano atual é: ${ano_atual}. É maior de idade? ${maior_idade} .Sua idade em 2050 será: ${idadeEm2050}`)
+alert(`Seu nome é ${nome} , você tem ${idade} anos de idade e o ano atual é: ${ano_atual}. É maior de idade? ${maior_idade} . Sua idade em 2050 será: ${idadeEm2050}`)
