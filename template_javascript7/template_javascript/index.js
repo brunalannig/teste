@@ -4,7 +4,8 @@ let nome = prompt("Digite seu nome: ")
 
 const meuArray = ["sushi","queijo","pizza","arroz","batata"]
     console.log(meuArray)
-    console.log("Estas são minhas comidas preferidas: ",meuArray)
+    let meuArrayOrdenado = ("\n" + meuArray[0] + "\n" + meuArray[1] + "\n" + meuArray[2] + "\n" + meuArray[3] + "\n" + meuArray[4])
+    console.log("Estas são minhas comidas preferidas: " + meuArrayOrdenado)
 
 let comidaUsuario = prompt("Qual sua comida preferida?")
     meuArrayAtualizado = 0
