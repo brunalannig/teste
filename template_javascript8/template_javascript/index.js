@@ -49,3 +49,14 @@ switch (pokemonUser){
 }
 
 -------------------------------------------------*/
+
+let ensinoConcluido = prompt ("Já concluiu o ensino médio? ") // sim //
+let maiorIdade = prompt ("Tem 18 anos ou mais? ") // 18 ou + //
+let naoCursando = prompt ("Está cursando alguma outra faculdade? ") // nao //
+
+if((ensinoConcluido==="Sim")&&(maiorIdade>=18)&&(naoCursando!=="Sim")){
+    alert('Pode cursar, meu bem!')
+}else{
+    alert('Não pode cursar :c')
+}
+
