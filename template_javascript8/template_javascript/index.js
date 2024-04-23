@@ -49,12 +49,15 @@ switch (pokemonUser){
 }
 
 -------------------------------------------------*/
-
+//Declara variaveis e lê valores do usuario
 let ensinoConcluido = prompt ("Já concluiu o ensino médio? ") // sim //
-let maiorIdade = prompt ("Tem 18 anos ou mais? ") // 18 ou + //
+let maiorIdade = Number(prompt ("Quantos anos você tem? ")) // 18 ou + //
 let naoCursando = prompt ("Está cursando alguma outra faculdade? ") // nao //
-
-if((ensinoConcluido==="Sim")&&(maiorIdade>=18)&&(naoCursando!=="Sim")){
+//Tratando strings
+ensinoConcluido = ensinoConcluido.toUpperCase()
+naoCursando = naoCursando.toUpperCase().replace("Ã","A")
+//Processando dados
+if((ensinoConcluido==="SIM")&&(maiorIdade>=18)&&(naoCursando==="NAO")){
     alert('Pode cursar, meu bem!')
 }else{
     alert('Não pode cursar :c')
