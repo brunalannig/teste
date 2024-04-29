@@ -66,7 +66,7 @@ function imprimeNome(nome){
 
 let nomeUser=""
 nomeUser=prompt("Digite seu nome:")
-imprimeNome(nomeUser)*/
+imprimeNome(nomeUser)
 
 function soma(numero1, numero2){
   let resultado
@@ -92,4 +92,8 @@ while (exit !== 0){
   alert(soma2)
 
   exit = Number(prompt("Digite 0 para sair!!!"))
-}
+}*/
+
+array = [1,2,3,4]
+novoArray = [array[3]/2, array[0]/2]
+console.log(novoArray)
