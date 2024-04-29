@@ -109,3 +109,20 @@ n4 = Number(prompt("Digite um numero: "))
 
 conjunto = numeros(Numeros)
 console.log(conjunto)
+
+
+
+/*function alteraNumeros(numeros){
+  let numbers = []
+
+  return numbers
+}
+
+let numeros = [2,3,4,5,6]
+let novosNumeros = []
+
+
+novosNumeros = alteraNumeros(numeros)
+
+CODIGO QUE O SOR FEZ QUE EU JA NEM LEMBRO QUAL QUESTAO ERA
+*/
