@@ -74,12 +74,6 @@ function soma(numero1, numero2){
   return resultado
 }
 
-function subtracao(numero1, numero2){
-  let resultado
-  resultado = numero1 - numero2
-  return resultado
-}
-
 let soma2 = 0
 let exit = 1
 while (exit !== 0){
@@ -94,6 +88,24 @@ while (exit !== 0){
   exit = Number(prompt("Digite 0 para sair!!!"))
 }*/
 
+
+
 array = [1,2,3,4]
 novoArray = [array[3]/2, array[0]/2]
 console.log(novoArray)
+
+function numeros(n1,n2,n3,n4){
+let Arrays
+Arrays = n1,n2,n3,n4
+return Arrays
+}
+
+let Numeros = []
+let conjunto
+n1 = Number(prompt("Digite um numero: "))
+n2 = Number(prompt("Digite um numero: "))
+n3 = Number(prompt("Digite um numero: "))
+n4 = Number(prompt("Digite um numero: "))
+
+conjunto = numeros(Numeros)
+console.log(conjunto)
