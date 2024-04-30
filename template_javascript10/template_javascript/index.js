@@ -146,3 +146,26 @@ let novaArray = []
 novaArray = trataArray(array)
 //Escreve com alert
 alert(novaArray)
+
+
+
+
+//EXERCICIO 2 DO SLIDES DE FUNCOES
+
+/*function nomes(nome1,nome2,nome3){
+   nome1 = (prompt("Digite um nome:"))
+   nome2 = (prompt("Digite um nome:"))
+   nome3 = (prompt("Digite um nome:"))
+   console.log(`Olá ${nome1}`)
+   console.log(`Olá ${nome2}`)
+   console.log(`Olá ${nome3}`)
+}
+nomes()*/
+
+function nomes(nome1,nome2,nome3){
+  nome1 = (prompt("Digite um nome:"))
+  nome2 = (prompt("Digite um nome:"))
+  nome3 = (prompt("Digite um nome:"))
+  console.log(`Olá ${nome1} , ${nome2} e ${nome3}`)
+}
+nomes()
