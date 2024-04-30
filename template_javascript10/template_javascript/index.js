@@ -90,11 +90,11 @@ while (exit !== 0){
 
 
 
-array = [1,2,3,4]
-novoArray = [array[3]/2, array[0]/2]
-console.log(novoArray)
+//array = [1,2,3,4]
+//novoArray = [array[3]/2, array[0]/2]
+//console.log(novoArray)
 
-function numeros(n1,n2,n3,n4){
+/*function numeros(n1,n2,n3,n4){
 let Arrays
 Arrays = n1,n2,n3,n4
 return Arrays
@@ -108,7 +108,7 @@ n3 = Number(prompt("Digite um numero: "))
 n4 = Number(prompt("Digite um numero: "))
 
 conjunto = numeros(Numeros)
-console.log(conjunto)
+console.log(conjunto)*/
 
 
 
@@ -126,3 +126,23 @@ novosNumeros = alteraNumeros(numeros)
 
 CODIGO QUE O SOR FEZ QUE EU JA NEM LEMBRO QUAL QUESTAO ERA
 */
+
+//EXERCICIO 2
+function trataArray(newArray){
+  //Inicializa variáveis
+  let array = []
+  let tamanho = newArray.length
+  //Armazena primeiro valor dividido por 2
+  array.push((newArray[0]/2))
+  array.push((newArray[(tamanho-1)]/2))
+  // Retorna array nova
+  return array
+}
+
+//Declara variáveis
+let array = [2,3,4,5,6,7,8]
+let novaArray = []
+//Chama função
+novaArray = trataArray(array)
+//Escreve com alert
+alert(novaArray)
