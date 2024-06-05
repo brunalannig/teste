@@ -1,15 +1,10 @@
-function imprimirMenu(){
-    let mensagem = ""
-    mensagem +="===== ABRIGOS TEMPORÁRIOS ====="
-    mensagem += "1. Cadastrar abrigo"
-    mesangem += "2. Listar abrigos"
-    mensagem += "3. Procurar abrigo"
-    mesangem += "4. Sair"
-    mensagem += "Escolha uma opção:"
-    let opcao = Number(prompt(mensagem))
-    return opcao
+const filme = {
+    direcao: 'esses sao dados da direcao',
+    nome:'Nome do Filme',
+    anoLancamento:'2005',
+    listaElenco:['Fernanda', 'Cássio','Buri'],
+    assistido: 'Já'
 }
 
-function main(){
-    
-}
+console.log (filme.direcao)
+console.log(filme.listaElenco[0])
