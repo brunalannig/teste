@@ -25,7 +25,9 @@ function cadastraAbrigo(){
 function listaCadastros(){
   let mensagem = " "
   mensagem +="===== Listagem ===== \n"
-  mensagem = mensagem + `Nome: ${abrigos.nome} Endereço: ${abrigos.endereco} Telefone: ${abrigos.telefone} Capacidade Lotação ${abrigos.capacidadeLotacao}`
+  for(let lugar of abrigos){
+  mensagem = mensagem + `Nome: ${lugar.nome} Endereço: ${lugar.endereco} Telefone: ${lugar.telefone} Capacidade Lotação: ${lugar.capacidadeLotacao}`
+  }
   alert(mensagem)
 }
 
@@ -34,18 +36,19 @@ cadastraAbrigo()
 listaCadastros()
 
 function main(){
-  switch (opcao) {
-      case 1 : cadastraAbrigo()
-         
-          break;
-          
-  case 2: listaCadastros()
-     
-      break;
-
-  case 3:
-
-    break;
+    let option = 0
+    while(option !== 5){
+        option = imprimirMenu()
+  switch (option) {
+      case 1 : 
+          cadastraAbrigo()
+           break;
+       case 2:
+          listaCadastros()
+           break;
+       case 3:
+ 
+           break;
 
   case 4:
 
@@ -55,5 +58,6 @@ function main(){
           break;
   }
 
+}
 }
   main()
