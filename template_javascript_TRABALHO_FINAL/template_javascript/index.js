@@ -1,10 +1,59 @@
-const filme = {
-    direcao: 'esses sao dados da direcao',
-    nome:'Nome do Filme',
-    anoLancamento:'2005',
-    listaElenco:['Fernanda', 'Cássio','Buri'],
-    assistido: 'Já'
+//Array Global
+let abrigos = []
+
+function imprimirMenu(){
+  let mensagem = ""
+  mensagem +="===== ABRIGOS TEMPORÁRIOS ===== \n"
+  mensagem += "1. Cadastrar abrigo \n"
+  mensagem += "2. Listar abrigos \n"
+  mensagem += "3. Procurar abrigo \n"
+  mensagem += "4. Sair \n"
+  mensagem += "Escolha uma opção: \n"
+  let opcao = Number(prompt(mensagem))
+  return opcao
 }
 
-console.log (filme.direcao)
-console.log(filme.listaElenco[0])
+function cadastraAbrigo(){
+  let nome = prompt("Diite o nome: ")
+  let endereco = prompt("Digite o endereço:")
+  let telefone = prompt("Digite o telefone: ")
+  let capacidadeLotacao = prompt("Digite a capacidade de lotação: ")
+  abrigos.push({nome,endereco,telefone,capacidadeLotacao})
+  alert("Cadastro realizado com sucesso!!!")
+}
+
+function listaCadastros(){
+  let mensagem = " "
+  mensagem +="===== Listagem ===== \n"
+  mensagem = mensagem + `Nome: ${abrigos.nome} Endereço: ${abrigos.endereco} Telefone: ${abrigos.telefone} Capacidade Lotação ${abrigos.capacidadeLotacao}`
+  alert(mensagem)
+}
+
+imprimirMenu()
+cadastraAbrigo()
+listaCadastros()
+
+function main(){
+  switch (opcao) {
+      case 1 : cadastraAbrigo()
+         
+          break;
+          
+  case 2: listaCadastros()
+     
+      break;
+
+  case 3:
+
+    break;
+
+  case 4:
+
+  break;
+
+      default:
+          break;
+  }
+
+}
+  main()
